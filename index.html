@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clayton's C.R.U.D form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Clayton's C.R.U.D form</h1>
+    <form id="create-form">
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="motivo_contato">Motivo do Contato:</label>
+            <textarea id="motivo_contato" name="motivo_contato" maxlength="500" required></textarea>
+        </div>
+        <button type="submit">Adicionar</button>
+    </form>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Motivo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os dados da tabela serão carregados aqui -->
+        </tbody>
+    </table>
+    <div id="edit-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="edit-form-container"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
